@@ -34,6 +34,7 @@
     padding: 0.5rem;
     color: white;
     margin-top: 0.5rem;
+    height: auto;
 }
 
 .Cpp{
@@ -99,4 +100,11 @@
 .VisualStudio{
     width: 85%;
     border: whitesmoke 0.1rem solid;
+}
+
+.align-left{
+    float: left;
+}
+.align-right{
+    float: right;
 }
