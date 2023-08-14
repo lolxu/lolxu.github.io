@@ -1,0 +1,43 @@
+/* Fancy CSS Effects */
+.glow {
+    text-align: center;
+    -webkit-animation: glow 500ms ease-in-out infinite alternate;
+    -moz-animation: glow 500ms ease-in-out infinite alternate;
+    animation: glow 500ms ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #ffffffac, 0 0 6px #ffffffac, 0 0 7px #dedede, 0 0 8px #dedede, 0 0 10px #171717, 0 0 12px #171717, 0 0 13px #171717;
+    }
+    to {
+      text-shadow: 0 0 7px #fff, 0 0 8px #878787, 0 0 9px #878787, 0 0 10px #878787, 0 0 13px #171717, 0 0 16px #171717, 0 0 19px #171717;
+    }
+  }
+
+  div.clickEffect{
+    position: fixed;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50%;
+    animation: clickEffect 0.3s ease-out;
+    z-index: 99999;
+  }
+
+  @keyframes clickEffect{
+    0%{
+      opacity: 1;
+      width: 0.5em;
+      height: 0.5em;
+      margin: -0.25em;
+      border-width: 0.25em;
+    }
+    100%{
+      opacity: 0.2;
+      width: 5em;
+      height: 5em;
+      margin: -2.5em;
+      border-width: 0.01em;
+    }
+  }

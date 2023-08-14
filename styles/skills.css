@@ -1,0 +1,102 @@
+#skills{
+    position: relative;
+    height: auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.skills-title-section{
+    display: flex;
+    /* position: relative; */
+    /* height: auto; */
+}
+
+.skills-title-section > i{
+    display: flex;
+    margin-top: 2.2rem;
+    cursor: default;
+}
+
+.skills-container{
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    /* height: auto; */
+}
+
+.skills-bar-container{
+    padding: 1.5rem;
+    flex: 1;
+}
+
+.skills-bar{
+    text-align: right; /* Right-align text */
+    padding: 0.5rem;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+.Cpp{
+    width: 85%;
+    border: whitesmoke 0.1rem solid;
+}
+.Java{
+    width: 75%;
+    border: whitesmoke 0.1rem solid;
+}
+.Python{
+    width: 65%;
+    border: whitesmoke 0.1rem solid;
+}
+.Csharp{
+    width: 60%;
+    border: whitesmoke 0.1rem solid;
+}
+.HTML{
+    width: 70%;
+    border: whitesmoke 0.1rem solid;
+}
+.CSS{
+    width: 60%;
+    border: whitesmoke 0.1rem solid;
+}
+.JS{
+    width: 55%;
+    border: whitesmoke 0.1rem solid;
+}
+.Unreal{
+    width: 70%;
+    border: whitesmoke 0.1rem solid;
+}
+.Unity{
+    width: 80%;
+    border: whitesmoke 0.1rem solid;
+}
+.UEFN{
+    width: 70%;
+    border: whitesmoke 0.1rem solid;
+}
+.Github{
+    width: 80%;
+    border: whitesmoke 0.1rem solid;
+}
+.Perforce{
+    width: 80%;
+    border: whitesmoke 0.1rem solid;
+}
+.Illustrator{
+    width: 75%;
+    border: whitesmoke 0.1rem solid;
+}
+.Photoshop{
+    width: 70%;
+    border: whitesmoke 0.1rem solid;
+}
+.Premiere{
+    width: 70%;
+    border: whitesmoke 0.1rem solid;
+}
+.Microsoft{
+    width: 80%;
+    border: whitesmoke 0.1rem solid;
+}

@@ -1,0 +1,55 @@
+/* About Section */
+
+#about{
+    position: relative;
+}
+
+.about-containers{
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    /* width: 80vw; */
+}
+
+.about-details-container{
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container{
+    display: flex;
+    justify-content: center;
+}
+
+.about-content{
+    padding: 1.5rem;
+    flex: 1;
+    background: rgb(13, 13, 13);
+    border-radius: 0.4rem;
+    border: whitesmoke 0.1rem solid;
+    border-color: whitesmoke;
+    text-align: left;
+
+    height: 30%;
+    overflow-y: auto;
+}
+
+.about-pic{
+    object-fit: cover; 
+    border-radius: 50%; 
+    height: 400px; 
+    width: 400px; 
+    object-position: 0 20%
+}
+
+.about-section-list{
+    color: white;
+    padding: 1rem;
+    font-size: 11pt;
+}
+.about-content-header{
+    font-size: 18pt;
+}
+.about-content-sub-header{
+    font-size: 14pt;
+}

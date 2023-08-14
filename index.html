@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Mobile Specific Metas -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+    <title>Zhehao Xu | Portfolio</title>
+
+    <!-- External file links for this html page  -->
+
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" type="text/css" href="styles/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="styles/landing.css" />
+    <link rel="stylesheet" type="text/css" href="styles/career.css" /> -->
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/mediaqueries.css" />
+    <link rel="stylesheet" href="./styles/sections.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/projects.css" />
+    <link rel="stylesheet" href="./styles/profile.css" />
+    <link rel="stylesheet" href="./styles/buttons.css" />
+    <link rel="stylesheet" href="./styles/effects.css" />
+    <link rel="stylesheet" href="./styles/scroll.css" />
+    <link rel="stylesheet" href="./styles/skills.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Project related css files -->
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="./styles/project_styles/mirage.css" /> -->
+
+    <!-- Icon -->
+    <!-- <link rel="icon" type="image/png" href="./data/images/icon_trans.png" /> -->
+
+    <!-- Scripts -->
+    <!-- <script src="scripts/quick_links.js"></script> -->
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/project_btn.js"></script>
+    <script
+      src="https://kit.fontawesome.com/31f4b01138.js"
+      crossorigin="anonymous"></script>
+    <!-- Add google analytics data -->
+  </head>
+
+  <!-- Add a custom container class implementation here.... -->
+  <body>
+
+    <nav id="desktop-nav">
+      <div class="logo glow">
+        .LOLXU
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <!-- <li><a href="#experience">Experience</a></li> -->
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="small-nav">
+      <div class="logo glow">
+        .LOLXU
+      </div>
+      <div class="small-menu">
+        <div class="small-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <div class="profile-bg">
+      <video autoplay muted loop class="profile-bg-vid">
+        <source src="./data/videos/Hero_Thumbnail_1.mp4" type="video/mp4">
+      </video>
+      <section id="profile">
+        <div class="section__text">
+          <p class="section__text__p1">Hi there, I'm</p>
+          <h1 class="title ">Zhehao (David) Xu | 许哲豪</h1>
+          <p class="section__text__p2">Gameplay Engineer / Designer</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2"
+              onclick="window.open('./data/resume.pdf')">Get My CV</button>
+            <button class="btn btn-color-1"
+              onclick="location.href='./#contact'">Contact Me</button>
+          </div>
+          <div id="socials-container">
+            <a href="mailto:davidx@gmail.com" target="_blank"><i
+                class="fa-solid fa-square-envelope fa-2x"></i></a>
+            <a href="https://github.com/lolxu" target="_blank"><i
+                class="fa-brands fa-square-github fa-2x"></i></a>
+            <a
+              href="https://www.linkedin.com/in/zhehao-xu-081b1321b/"
+              target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+            <a href="https://lolxu.itch.io/" target="_blank"><i
+                class="fa-brands fa-itch-io fa-2x"></i></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section id="about">
+      <p class="section__text__p1">So... you want to know more</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./data/images/my-pic.jpg" alt="Profile Picture"
+            class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              Hi there! I'm David. I am an undergraduate senior student
+              currently studying
+              at
+              the University of Southern California, majoring in Computer
+              Science
+              with a concentration in games. My work is focused in gameplay
+              engineering and design. I have experiences working with Unreal
+              Engine 4,
+              Unity and UEFN.
+            </p>
+          </div>
+          <div class="about-containers">
+            <button id="about-experience_button" class="btn btn-color-2">
+              Work Exp.
+            </button>
+            <button id="about-education_button" class="btn btn-color-2">
+              Education
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="about-content" class="about-content">
+        <div id="details-container" class="details-container">
+          <p> &gt; Click above buttons to reveal... </p>
+        </div>
+      </div>
+      <a href="#projects" class="icon-arrow"><i
+          class="fa-solid fa-arrow-down-long fa-fade fa-xl"></i></a>
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">
+        Here are my
+      </p>
+      <h1 class="title">
+        Projects
+      </h1>
+
+      <div class="project-details-container">
+        <div class="project-containers">
+          <div class="further-details-container color-container">
+            <!-- First Project -->
+            <div class="article-container">
+              <img src="./data/images/project-1.gif" alt="Project 1"
+                class="project-img" />
+            </div>
+            <h2 class="project-sub-title project-title">Simply Rotate</h2>
+            <div class="project-tldr">
+              <p> A short description of this project... </p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 proj-expand-button"
+                id="simply_rotate_btn"
+                onclick="loadProject(this, 0)">
+                Details
+              </button>
+            </div>
+          </div>
+          <!-- Second Project -->
+          <div class="further-details-container color-container">
+            <div class="article-container">
+              <img src="./data/images/project-1.gif" alt="Project 2"
+                class="project-img" />
+            </div>
+            <h2 class="project-sub-title project-title">Project #2</h2>
+            <div class="project-tldr">
+              <p> A short description of this project... </p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 proj-expand-button"
+                id="project_2_btn"
+                onclick="loadProject(this, 1)">
+                Details
+              </button>
+            </div>
+          </div>
+          <!-- Third Project -->
+          <div class="further-details-container color-container">
+            <div class="article-container">
+              <img src="./data/images/project-1.gif" alt="Project 3"
+                class="project-img" />
+            </div>
+            <h2 class="project-sub-title project-title">Project #3</h2>
+            <div class="project-tldr">
+              <p> A short description of this project... </p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 proj-expand-button"
+                id="project_3_btn"
+                onclick="loadProject(this, 2)">
+                Details
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="project-containers">
+          <!-- Fourth Project -->
+          <div class="further-details-container color-container">
+            <div class="article-container">
+              <img src="./data/images/project-1.gif" alt="Project 4"
+                class="project-img" />
+            </div>
+            <h2 class="project-sub-title project-title">Project #4</h2>
+            <div class="project-tldr">
+              <p> A short description of this project... </p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 proj-expand-button"
+                id="project_4_btn"
+                onclick="loadProject(this, 3)">
+                Details
+              </button>
+            </div>
+          </div>
+          <!-- Fifth Project -->
+          <div class="further-details-container color-container">
+            <div class="article-container">
+              <img src="./data/images/project-1.gif" alt="Project 5"
+                class="project-img" />
+            </div>
+            <h2 class="project-sub-title project-title">Project #5</h2>
+            <div class="project-tldr">
+              <p> A short description of this project... </p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 proj-expand-button"
+                id="project_5_btn"
+                onclick="loadProject(this, 4)">
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#skills" class="icon-arrow"><i
+          class="fa-solid fa-arrow-down-long fa-fade fa-xl"></i></a>
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p1">
+        This is my game making
+      </p>
+      <h1 class="title">
+        Character Profile / Skills
+      </h1>
+      <div class="skills-details-container">
+        <div class="skills-container">
+          <div class="skills-title-section">
+            <h3 class="project-sub-title project-title">Programming</h3>
+            <i class="fa-solid fa-code fa-xl" style="color: #ffffff;"></i>
+          </div>
+          <div class="skills-bar-container">
+            <div class="skills-bar Cpp"><p>C++: 85</p></div>
+            <div class="skills-bar Java"><p>Java: 75</p></div>
+            <div class="skills-bar Python"><p>Python: 65</p></div>
+            <div class="skills-bar Csharp"><p>C#: 60</p></div>
+            <div class="skills-bar HTML"><p>HTML: 70</p></div>
+            <div class="skills-bar CSS"><p>CSS: 60</p></div>
+            <div class="skills-bar JS"><p>JavaScript: 55</p></div>
+          </div>
+          <div class="skills-title-section">
+            <h3 class="project-sub-title project-title">Game Engine</h3>
+            <i class="fa-solid fa-gamepad fa-xl" style="color: #ffffff;"></i>
+          </div>
+          <div class="skills-bar-container">
+            <div class="skills-bar Unreal"><p>Unreal Engine 4: 70</p></div>
+            <div class="skills-bar Unity"><p>Unity: 80</p></div>
+            <div class="skills-bar UEFN"><p>UEFN: 70</p></div>
+          </div>
+          <div class="skills-title-section">
+            <h3 class="project-sub-title project-title">Tools</h3>
+            <i class="fa-solid fa-toolbox fa-xl" style="color: #ffffff;"></i>
+          </div>
+          <div class="skills-bar-container">
+            <div class="skills-bar Github"><p>Github: 80</p></div>
+            <div class="skills-bar Perforce"><p>Perforce: 80</p></div>
+            <div class="skills-bar Illustrator"><p>Illustrator: 75</p></div>
+            <div class="skills-bar Photoshop"><p>Photoshop: 70</p></div>
+            <div class="skills-bar Premiere"><p>Premiere: 70</p></div>
+            <div class="skills-bar Microsoft"><p>Microsoft Suite: 80</p></div>
+          </div>
+        </div>
+      </div>
+      <a href="#contact" class="icon-arrow"><i
+          class="fa-solid fa-arrow-down-long fa-fade fa-xl"></i></a>
+    </section>
+
+  </body>
+
+</html>
