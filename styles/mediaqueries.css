@@ -15,7 +15,7 @@
     }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) and (aspect-ratio >= 18/9) and (aspect-ratio <= 20/9){
     #desktop-nav{
         display: none;
     }
@@ -66,7 +66,7 @@
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) and (aspect-ratio >= 18/9) and (aspect-ratio <= 20/9){
     #contact,
     footer{
         height: 50vh;
