@@ -27,4 +27,9 @@
     left: 0;
     width: 100%;
     height: auto;
+    min-width: 800px;
 }
+
+/* #profile > .section__text{
+    top: 30%;
+} */

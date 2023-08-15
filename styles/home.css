@@ -68,6 +68,11 @@ a:hover{
     cursor: default;
 }
 
+.logo-link:hover{
+    text-decoration: none;
+    color: white;
+}
+
 /* Small Menu */
 #small-nav{
     display: none;
@@ -103,6 +108,7 @@ a:hover{
     max-height: 0;
     overflow: hidden;
     transition: all 300ms ease-in-out;
+    z-index: 99999;
 }
 
 .menu-links a{
@@ -140,4 +146,14 @@ a:hover{
 }
 .small-icon span:first-child{
     transform:none;
+}
+
+/* Footer Section */
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
 }

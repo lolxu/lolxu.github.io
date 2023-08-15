@@ -1,0 +1,38 @@
+/* Contact Section */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: rem;
+    border: whitesmoke 0.1rem solid;
+    border-color: whitesmoke;
+    background-color: rgb(13, 13, 13);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p{
+    font-size: larger;
+}
+
+.contact-info-container a:hover{
+    text-decoration: none;
+}
+
+
+

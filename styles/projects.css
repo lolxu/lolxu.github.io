@@ -11,8 +11,10 @@
 }
 
 .project-img{
-    border-radius: 1rem;
+    border-radius: 0.25rem;
     width: 100%;
+    max-width: 70%;
+    min-width: 300px;
     height: 90%;
 }
 
@@ -50,6 +52,9 @@
 
 .project-shields{
     text-align: center;
+    gap: 1rem;
+    margin: 1rem;
+    padding: 0.5rem;
 }
 
 .project-tldr{
@@ -69,6 +74,18 @@
 .project-containers, .project-details-container{
     display: flex;
     justify-content: center;
+}
+
+.project-description-details{
+    line-height: 2rem;
+    gap: 1rem;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.project-btn-container{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 

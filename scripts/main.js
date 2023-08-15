@@ -16,61 +16,66 @@ function loadHtml() {
     let experienceVisible = false;
     let educationVisible = false;
 
-    loadExperience.addEventListener('click', async function() {
-        try {
-            educationVisible = false;
-            if (experienceVisible) {
-                contentContainer.style.opacity = 0;
-                
-                setTimeout(() => {
-                    contentContainer.innerHTML = '<p> &gt; Click above buttons to reveal... </p>';
-                    experienceVisible = false;
-                    contentContainer.style.opacity = 1;
-                }, 300);
+    if (loadExperience != null) {
+        loadExperience.addEventListener('click', async function() {
+            try {
+                educationVisible = false;
+                if (experienceVisible) {
+                    contentContainer.style.opacity = 0;
+                    
+                    setTimeout(() => {
+                        contentContainer.innerHTML = '<p> &gt; Click above buttons to reveal... </p>';
+                        experienceVisible = false;
+                        contentContainer.style.opacity = 1;
+                    }, 300);
+                }
+                else {
+                    const response = await fetch('./data/pages/experience.html');
+                    const html = await response.text();
+                    contentContainer.style.opacity = 0;
+                    setTimeout(() => {
+                        contentContainer.innerHTML = html;
+                        experienceVisible = true;
+                        contentContainer.style.opacity = 1;
+                    }, 300);
+                }
+                // console.log(experienceVisible, educationVisible);
+            } catch (error) {
+            console.error('Error loading external page:', error);
             }
-            else {
-                const response = await fetch('./data/pages/experience.html');
-                const html = await response.text();
-                contentContainer.style.opacity = 0;
-                setTimeout(() => {
-                    contentContainer.innerHTML = html;
-                    experienceVisible = true;
-                    contentContainer.style.opacity = 1;
-                }, 300);
-            }
-            // console.log(experienceVisible, educationVisible);
-        } catch (error) {
-          console.error('Error loading external page:', error);
-        }
-      });
+        });
+    }
 
-      loadEducation.addEventListener('click', async function() {
-        try {
-            experienceVisible = false;
-            if (educationVisible) {
-                contentContainer.style.opacity = 0;
-                
-                setTimeout(() => {
-                    contentContainer.innerHTML = '<p> &gt; Click above buttons to reveal... </p>';
-                    educationVisible = false;
-                    contentContainer.style.opacity = 1;
-                }, 300);
+      if (loadEducation != null) {
+        loadEducation.addEventListener('click', async function() {
+            try {
+                experienceVisible = false;
+                if (educationVisible) {
+                    contentContainer.style.opacity = 0;
+                    
+                    setTimeout(() => {
+                        contentContainer.innerHTML = '<p> &gt; Click above buttons to reveal... </p>';
+                        educationVisible = false;
+                        contentContainer.style.opacity = 1;
+                    }, 300);
+                }
+                else {
+                    const response = await fetch('./data/pages/education.html');
+                    const html = await response.text();
+                    contentContainer.style.opacity = 0;
+                    setTimeout(() => {
+                        contentContainer.innerHTML = html;
+                        educationVisible = true;
+                        contentContainer.style.opacity = 1;
+                    }, 300);
+                }
+                // console.log(experienceVisible, educationVisible);
+            } catch (error) {
+              console.error('Error loading external page:', error);
             }
-            else {
-                const response = await fetch('./data/pages/education.html');
-                const html = await response.text();
-                contentContainer.style.opacity = 0;
-                setTimeout(() => {
-                    contentContainer.innerHTML = html;
-                    educationVisible = true;
-                    contentContainer.style.opacity = 1;
-                }, 300);
-            }
-            // console.log(experienceVisible, educationVisible);
-        } catch (error) {
-          console.error('Error loading external page:', error);
-        }
-      });
+          });
+      }
+      
 }
 
 function clickEffect(e){

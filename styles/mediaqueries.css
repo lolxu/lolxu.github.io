@@ -1,8 +1,137 @@
+@media screen and (max-width: 1400px){
+    #profile{
+        height: 83vh;
+        margin-bottom: 6rem;
+    }
+    .about-containers{
+        flex-wrap: wrap;
+    }
+    .about-pic{
+        object-fit: cover; 
+        border-radius: 50%; 
+        height: 400px; 
+        width: 400px; 
+        object-position: 0 20%
+    }
+}
+
 @media screen and (max-width: 1200px){
     #desktop-nav{
         display: none;
     }
     #small-nav{
         display: flex;
+    }
+    #projects, .project-details-container{
+        margin-top: 2rem;
+    }
+    #profile, .section-container{
+        display: block;
+    }
+    #about{
+        flex-wrap: wrap;
+    }
+    .icon-arrow{
+        display: none;
+    }
+    section, .section-container{
+        height: fit-content;
+        flex-wrap: wrap;
+    }
+
+    section{
+        margin: 0 5%;
+    }
+    .section__pic-container{
+        width: auto;
+        height: 30vh;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .about-pic{
+        object-fit: cover; 
+        border-radius: 50%; 
+        height: 275px; 
+        width: 275px; 
+        object-position: 0 20%
+    }
+    .about-containers{
+        margin-top: 1rem;
+    }
+    #profile > .section__text{
+        top: 35%;
+    }
+    .about-containers, .contact-info-upper-container, .btn-container, .project-containers{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #contact,
+    footer{
+        height: 50vh;
+    }
+
+    #profile{
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    article{
+        font-size: 1rem;
+    }
+    footer nav{
+        height: fit-content;
+        /* margin-left: 2rem;
+        margin-right: 2rem; */
+        margin-bottom: 4rem;
+    }
+    .about-containers, .contact-info-upper-container, .btn-container, .project-containers{
+        flex-wrap: wrap;
+    }
+
+    .about-pic{
+        object-fit: cover; 
+        border-radius: 50%; 
+        height: 170px; 
+        width: 170px; 
+        object-position: 0 20%
+    }
+
+    .project-details-container{
+        width: 90%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .contact-info-container{
+        margin: 1rem;
+    }
+    .contact-info-container p, .nav-links li a{
+        font-size: 1rem;
+    }
+    .project-sub-title{
+        font-size: 1.25rem;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+    .section__pic-container{
+        width: auto;
+        height: 46vw;
+        justify-content: center;
+    }
+    .section__text__p2{
+        font-size: 1.25rem;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .text-container{
+        text-align: justify;
     }
 }

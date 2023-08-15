@@ -17,7 +17,6 @@
     <link rel="stylesheet" type="text/css" href="styles/landing.css" />
     <link rel="stylesheet" type="text/css" href="styles/career.css" /> -->
     <link rel="stylesheet" href="./styles/home.css" />
-    <link rel="stylesheet" href="./styles/mediaqueries.css" />
     <link rel="stylesheet" href="./styles/sections.css" />
     <link rel="stylesheet" href="./styles/about.css" />
     <link rel="stylesheet" href="./styles/projects.css" />
@@ -26,6 +25,8 @@
     <link rel="stylesheet" href="./styles/effects.css" />
     <link rel="stylesheet" href="./styles/scroll.css" />
     <link rel="stylesheet" href="./styles/skills.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="./styles/mediaqueries.css" />
 
     <link
       rel="stylesheet"
@@ -55,7 +56,7 @@
 
     <nav id="desktop-nav">
       <div class="logo glow">
-        .LOLXU
+        <a class="logo-link" href="#profile">.LOLXU</a>
       </div>
       <div>
         <ul class="nav-links">
@@ -70,7 +71,7 @@
 
     <nav id="small-nav">
       <div class="logo glow">
-        .LOLXU
+        <a class="logo-link" href="#profile">.LOLXU</a>
       </div>
       <div class="small-menu">
         <div class="small-icon" onclick="toggleMenu()">
@@ -79,11 +80,14 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a href="#about"
+              onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects"
+              onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#skills"
+              onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#contact"
+              onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
@@ -104,13 +108,8 @@
               onclick="location.href='./#contact'">Contact Me</button>
           </div>
           <div id="socials-container">
-            <a href="mailto:davidx@gmail.com" target="_blank"><i
-                class="fa-solid fa-square-envelope fa-2x"></i></a>
             <a href="https://github.com/lolxu" target="_blank"><i
                 class="fa-brands fa-square-github fa-2x"></i></a>
-            <a
-              href="https://www.linkedin.com/in/zhehao-xu-081b1321b/"
-              target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
             <a href="https://lolxu.itch.io/" target="_blank"><i
                 class="fa-brands fa-itch-io fa-2x"></i></a>
           </div>
@@ -382,6 +381,45 @@
       <a href="#contact" class="icon-arrow"><i
           class="fa-solid fa-arrow-down-long fa-fade fa-xl"></i></a>
     </section>
+
+    <section id="contact">
+      <p class="section__text__p1">
+        Get in touch
+      </p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <a href="mailto:davidx@gmail.com" target="_blank"><i
+              class="fa-solid fa-square-envelope fa-3x"></i></a>
+          <p><a href="mailto:davidx@usc.edu">
+              davidx@usc.edu
+            </a></p>
+        </div>
+        <div class="contact-info-container">
+          <a
+            href="https://www.linkedin.com/in/zhehao-xu-081b1321b/"
+            target="_blank"><i class="fa-brands fa-linkedin fa-3x"></i></a>
+          <p><a href="mailto:davidx@usc.edu">
+              linkedIn
+            </a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#experience">Experience</a></li> -->
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Zhehao Xu. All Rights Reserved.</p>
+    </footer>
 
   </body>
 
