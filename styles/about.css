@@ -32,6 +32,7 @@
 
     height: 30%;
     overflow-y: auto;
+    /* height: justify-content; */
 }
 
 .about-pic{
