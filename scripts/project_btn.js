@@ -2,7 +2,9 @@
 
 const ProjectNames = 
 [
-    "simply_rotate"
+    "simply_rotate",
+    "gmtk_2023",
+    "sdl_projects"
 ]
 
 let ProjectText = [];
