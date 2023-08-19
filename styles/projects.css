@@ -105,5 +105,9 @@
     height: auto;
 }
 
+mark{
+    background-color: whitesmoke;
+    color: black;
+}
 
 
