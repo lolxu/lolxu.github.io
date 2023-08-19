@@ -4,7 +4,10 @@ const ProjectNames =
 [
     "simply_rotate",
     "gmtk_2023",
-    "sdl_projects"
+    "sdl_projects",
+    "prototype",
+    "tencent",
+    "average_day"
 ]
 
 let ProjectText = [];
