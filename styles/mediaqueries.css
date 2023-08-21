@@ -45,7 +45,7 @@
     }
     .section__pic-container{
         width: auto;
-        height: 30vh;
+        height: fit-content;
         justify-content: center;
         margin-bottom: 1rem;
     }
@@ -128,7 +128,7 @@
     }
     .section__pic-container{
         width: auto;
-        height: 46vw;
+        height: fit-content;
         justify-content: center;
     }
     .section__text__p2{

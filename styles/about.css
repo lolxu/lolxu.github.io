@@ -2,6 +2,7 @@
 
 #about{
     position: relative;
+    min-height: 1000px;
 }
 
 .about-containers{
@@ -53,4 +54,13 @@
 }
 .about-content-sub-header{
     font-size: 14pt;
+}
+
+.section__pic-container{
+    height: fit-content;
+}
+
+.section-container{
+    height: fit-content;
+    margin-bottom: 2rem;
 }
