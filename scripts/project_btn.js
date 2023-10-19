@@ -7,7 +7,8 @@ const ProjectNames =
     "sdl_projects",
     "prototype",
     "tencent",
-    "average_day"
+    "average_day",
+    "bodycam_shooter"
 ]
 
 let ProjectText = [];
@@ -15,11 +16,6 @@ let ProjectText = [];
 for (let i = 0; i < ProjectNames.length; ++i) {
     ProjectText.push("");
     ProjectText[i] = "./data/pages/projects/" + ProjectNames[i];
-
-    // fetch("./data/pages/projects/" + ProjectNames[i] + ".html")
-    // .then( r => r.text())
-    // .then( t => {ProjectText[i] = t; console.log(ProjectText[i]); console.log(i);})
-    
 }
 
 let btnLock = false;
