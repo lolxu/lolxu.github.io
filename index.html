@@ -197,10 +197,33 @@
 
       <div class="project-details-container">
         <div class="project-containers">
+
           <div class="further-details-container color-container">
-            <!-- First Project -->
+            <!-- AGP Project -->
             <div class="article-container">
-              <img src="./data/images/project-1.gif" alt="Project 1"
+              <img src="./data/images/agp.gif" alt="AGP"
+                class="project-img" />
+            </div>
+            <h2 class="project-sub-title project-title">Oasis Blitz</h2>
+            <div class="project-tldr">
+              <p class="project-tldr-description"> A unique platforming game
+                where you can drill into the terrain. I am the gameplay engineer
+                on this
+                team for my USC AGP program. </p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 proj-expand-button"
+                id="simply_rotate_btn"
+                onclick="loadProject(this, 7)">
+                Details
+              </button>
+            </div>
+          </div>
+
+          <div class="further-details-container color-container">
+            <!-- Simply Rotate Project -->
+            <div class="article-container">
+              <img src="./data/images/project-1.gif" alt="Simply Rotate"
                 class="project-img" />
             </div>
             <h2 class="project-sub-title project-title">Simply Rotate</h2>
@@ -219,13 +242,14 @@
             </div>
           </div>
 
-          <!-- New Project! -->
+          <!-- Bodycam Shooter -->
           <div class="further-details-container color-container">
             <div class="article-container">
               <img src="./data/images/bodycam-thumbnail.gif"
                 alt="project-thumbnail" class="project-img" />
             </div>
-            <h2 class="project-sub-title project-title">Bodycam Shooter Project</h2>
+            <h2 class="project-sub-title project-title">Bodycam Shooter
+              Project</h2>
             <div class="project-tldr">
               <p class="project-tldr-description"> A WIP UE5 project from me
                 that tries to recreate a True FPS experience from a bodycam
@@ -239,8 +263,9 @@
               </button>
             </div>
           </div>
-
-          <!-- Second Project -->
+        </div>
+        <div class="project-containers">
+          <!-- Untitled Platforming Project -->
           <div class="further-details-container color-container">
             <div class="article-container">
               <img src="./data/images/gmtk-thumbnail.gif"
@@ -249,7 +274,8 @@
             <h2 class="project-sub-title project-title">Untitled Platforming
               Game</h2>
             <div class="project-tldr">
-              <p class="project-tldr-description"> Submission to GMTK 2023 Game
+              <p class="project-tldr-description"> Submission to GMTK 2023
+                Game
                 Jam: Roles Reversed. It offers an
                 interesting reverse on platforming. </p>
             </div>
@@ -262,7 +288,7 @@
             </div>
           </div>
 
-          <!-- Third Project -->
+          <!-- C++ SDL Projects -->
           <div class="further-details-container color-container">
             <div class="article-container">
               <img src="./data/images/sdl-thumbnail.gif"
@@ -284,75 +310,75 @@
               </button>
             </div>
           </div>
+        </div>
+      </div>
 
+      <div class="project-containers">
+        <!-- Game Prototypes -->
+        <div class="further-details-container color-container">
+          <div class="article-container">
+            <img src="./data/images/prototype-thumbnail.gif"
+              alt="project-thumbnail" class="project-img" />
+          </div>
+          <h2 class="project-sub-title project-title">Game Prototypes</h2>
+          <div class="project-tldr">
+            <p class="project-tldr-description"> Several game prototypes
+              made
+              with different constraints and
+              limited scopes. These prototypes are made with Unity and C#.
+            </p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 proj-expand-button"
+              id="csci426_projects_btn"
+              onclick="loadProject(this, 3)">
+              Details
+            </button>
+          </div>
         </div>
 
-        <div class="project-containers">
-
-          <!-- Fourth Project -->
-          <div class="further-details-container color-container">
-            <div class="article-container">
-              <img src="./data/images/prototype-thumbnail.gif"
-                alt="project-thumbnail" class="project-img" />
-            </div>
-            <h2 class="project-sub-title project-title">Game Prototypes</h2>
-            <div class="project-tldr">
-              <p class="project-tldr-description"> Several game prototypes made
-                with different constraints and
-                limited scopes. These prototypes are made with Unity and C#.
-              </p>
-            </div>
-            <div class="btn-container">
-              <button class="btn btn-color-2 proj-expand-button"
-                id="csci426_projects_btn"
-                onclick="loadProject(this, 3)">
-                Details
-              </button>
-            </div>
+        <!-- Tencent Games -->
+        <div class="further-details-container color-container">
+          <div class="article-container">
+            <img src="./data/images/tencent-thumbnail.gif"
+              alt="project-thumbnail" class="project-img" />
           </div>
-
-          <!-- Fifth Project -->
-          <div class="further-details-container color-container">
-            <div class="article-container">
-              <img src="./data/images/tencent-thumbnail.gif"
-                alt="project-thumbnail" class="project-img" />
-            </div>
-            <h2 class="project-sub-title project-title">Tencent Games Summer
-              Open Course Projects</h2>
-            <div class="project-tldr">
-              <p class="project-tldr-description"> Projects made from learning
-                and making mechanics in Unreal
-                Engine 4 during the Tencent Games summer session.</p>
-            </div>
-            <div class="btn-container">
-              <button class="btn btn-color-2 proj-expand-button"
-                id="tencent_btn"
-                onclick="loadProject(this, 4)">
-                Details
-              </button>
-            </div>
+          <h2 class="project-sub-title project-title">Tencent Games Summer
+            Open Course Projects</h2>
+          <div class="project-tldr">
+            <p class="project-tldr-description"> Projects made from learning
+              and making mechanics in Unreal
+              Engine 4 during the Tencent Games summer session.</p>
           </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 proj-expand-button"
+              id="tencent_btn"
+              onclick="loadProject(this, 4)">
+              Details
+            </button>
+          </div>
+        </div>
 
-          <!-- Sixth Project -->
-          <div class="further-details-container color-container">
-            <div class="article-container">
-              <img src="./data/images/average-day-thumbnail.gif"
-                alt="project-thumbnail" class="project-img" />
-            </div>
-            <h2 class="project-sub-title project-title">An Average Day</h2>
-            <div class="project-tldr">
-              <p class="project-tldr-description"> An interesting take on
-                Sokoban
-                style puzzle game. This is a class project from the Intermediate
-                Game Development course from USC. </p>
-            </div>
-            <div class="btn-container">
-              <button class="btn btn-color-2 proj-expand-button"
-                id="breakout_btn"
-                onclick="loadProject(this, 5)">
-                Details
-              </button>
-            </div>
+        <!-- An Average Day -->
+        <div class="further-details-container color-container">
+          <div class="article-container">
+            <img src="./data/images/average-day-thumbnail.gif"
+              alt="project-thumbnail" class="project-img" />
+          </div>
+          <h2 class="project-sub-title project-title">An Average Day</h2>
+          <div class="project-tldr">
+            <p class="project-tldr-description"> An interesting take on
+              Sokoban
+              style puzzle game. This is a class project from the
+              Intermediate
+              Game Development course from USC. </p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 proj-expand-button"
+              id="breakout_btn"
+              onclick="loadProject(this, 5)">
+              Details
+            </button>
           </div>
         </div>
       </div>
