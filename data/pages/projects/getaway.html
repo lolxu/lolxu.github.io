@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-QTXB9004Y4"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-QTXB9004Y4');
+        </script>
+        <!-- Metadata -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Zhehao Xu | Getaway</title>
+
+        <link rel="stylesheet" href="../../../styles/home.css" />
+        <link rel="stylesheet" href="../../../styles/sections.css" />
+        <link rel="stylesheet" href="../../../styles/about.css" />
+        <link rel="stylesheet" href="../../../styles/projects.css" />
+        <link rel="stylesheet" href="../../../styles/profile.css" />
+        <link rel="stylesheet" href="../../../styles/buttons.css" />
+        <link rel="stylesheet" href="../../../styles/effects.css" />
+        <link rel="stylesheet" href="../../../styles/scroll.css" />
+        <link rel="stylesheet" href="../../../styles/skills.css" />
+        <link rel="stylesheet" href="../../../styles/mediaqueries.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <link rel="apple-touch-icon" sizes="180x180"
+            href="../../icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="../../icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="../../icon/favicon-16x16.png">
+        <link rel="manifest" href="../../icon/site.webmanifest">
+
+        <script src="../../../scripts/main.js"></script>
+        <script
+            src="https://kit.fontawesome.com/31f4b01138.js"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <nav id="desktop-nav">
+            <div class="logo glow">
+                <a class="logo-link" href="../../../index.html">.LOLXU</a>
+            </div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="../../../index.html#about">About</a></li>
+                    <li><a href="../../../index.html#projects">Projects</a></li>
+                    <li><a href="../../../index.html#skills">Skills</a></li>
+                    <li><a href="../../../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="small-nav">
+            <div class="logo glow">
+                <a class="logo-link" href="../../../index.html">.LOLXU</a>
+            </div>
+            <div class="small-menu">
+                <div class="small-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="../../../index.html#about"
+                            onclick="toggleMenu()">About</a></li>
+                    <li><a href="../../../index.html#projects"
+                            onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="../../../index.html#skills"
+                            onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="../../../index.html#contact"
+                            onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+
+        <section class="project-page">
+            <h1 class="title">Getaway</h1>
+            <div class="project-shields">
+                <img
+                    src="https://img.shields.io/badge/Engine-Unity-white"
+                    alt="badge" />
+                <img
+                    src="https://img.shields.io/badge/Language-C%23-green
+                "
+                    alt="badge" />
+                <img
+                    src="https://img.shields.io/badge/Category-Game-red
+                "
+                    alt="badge" />
+                <img
+                    src="https://img.shields.io/badge/Type-Solo-purple
+
+                "
+                    alt="badge" />
+            </div>
+            <div class="article-container">
+                <video autoplay muted loop playsinline
+                    class="project-thumbnail-vid">
+                    <source src="../../videos/getaway.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <div class="btn-container project-btn-container">
+                <button class="btn btn-color-2"
+                    onclick="window.open('https://github.com/lolxu/GetawayGame')">
+                    GitHub
+                </button>
+            </div>
+            <div class="section__text">
+                <p class="project-description-details">
+                    This is a mobile game developed from a class project for ITP
+                    382 - Mobile Game Programming at USC. This project innovates
+                    on the touch control of mobile devices and use it in
+                    multiple ways as the main form of control.
+                    <br /><br />
+
+                    The getaway car will passively drive to the checkpoints, but
+                    it will need the players' direct input to evade cops by
+                    drifting. There will also be random powerups that can be
+                    obtained from getting to special checkpoints. Get to enough
+                    checkpoints to progress to next level.
+
+                    <br /><br />
+
+                    The project uses Unity NavMesh Agent to implement the
+                    pathfinding for the getaway vehicle, and the game detects
+                    touch controls to create forces that can push the getaway
+                    vehicle. To prevent race condition between the physics and
+                    NavMesh agent, I try to enable and disable the agent based
+                    on the amount of force the getaway vehicle is experiencing.
+                    I made sure the physics will not interfere with the NavMesh
+                    agent's pathfinding.
+                </p>
+            </div>
+            <div class="btn-container project-btn-container">
+                <button class="btn btn-color-2"
+                    onclick="window.location.href='../../../#projects'">
+                    Back
+                </button>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="../../../#about">About</a></li>
+                        <li><a href="../../../#projects">Projects</a></li>
+                        <li><a href="../../../#skills">Skills</a></li>
+                        <li><a href="../../../#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2023 Zhehao Xu. All Rights Reserved.</p>
+        </footer>
+    </body>
+
+</html>

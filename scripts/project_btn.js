@@ -9,7 +9,8 @@ const ProjectNames =
     "tencent",
     "average_day",
     "bodycam_shooter",
-    "agp"
+    "agp",
+    "getaway"
 ]
 
 let ProjectText = [];
