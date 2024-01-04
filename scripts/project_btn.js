@@ -10,7 +10,8 @@ const ProjectNames =
     "average_day",
     "bodycam_shooter",
     "agp",
-    "getaway"
+    "getaway",
+    "multiplayer_fps"
 ]
 
 let ProjectText = [];

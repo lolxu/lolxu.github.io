@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Google tag (gtag.js) -->
+        <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-QTXB9004Y4"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-QTXB9004Y4');
+        </script>
+        <!-- Metadata -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Zhehao Xu | Multiplayer FPS</title>
+
+        <link rel="stylesheet" href="../../../styles/home.css" />
+        <link rel="stylesheet" href="../../../styles/sections.css" />
+        <link rel="stylesheet" href="../../../styles/about.css" />
+        <link rel="stylesheet" href="../../../styles/projects.css" />
+        <link rel="stylesheet" href="../../../styles/profile.css" />
+        <link rel="stylesheet" href="../../../styles/buttons.css" />
+        <link rel="stylesheet" href="../../../styles/effects.css" />
+        <link rel="stylesheet" href="../../../styles/scroll.css" />
+        <link rel="stylesheet" href="../../../styles/skills.css" />
+        <link rel="stylesheet" href="../../../styles/mediaqueries.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+        <link rel="apple-touch-icon" sizes="180x180"
+            href="../../icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="../../icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16"
+            href="../../icon/favicon-16x16.png">
+        <link rel="manifest" href="../../icon/site.webmanifest">
+
+        <script src="../../../scripts/main.js"></script>
+        <script
+            src="https://kit.fontawesome.com/31f4b01138.js"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <nav id="desktop-nav">
+            <div class="logo glow">
+                <a class="logo-link" href="../../../index.html">.LOLXU</a>
+            </div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="../../../index.html#about">About</a></li>
+                    <li><a href="../../../index.html#projects">Projects</a></li>
+                    <li><a href="../../../index.html#skills">Skills</a></li>
+                    <li><a href="../../../index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="small-nav">
+            <div class="logo glow">
+                <a class="logo-link" href="../../../index.html">.LOLXU</a>
+            </div>
+            <div class="small-menu">
+                <div class="small-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="../../../index.html#about"
+                            onclick="toggleMenu()">About</a></li>
+                    <li><a href="../../../index.html#projects"
+                            onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="../../../index.html#skills"
+                            onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="../../../index.html#contact"
+                            onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+
+        <section class="project-page">
+            <h1 class="title">UE5 Multiplayer FPS</h1>
+            <div class="project-shields">
+                <img
+                    src="https://img.shields.io/badge/Engine-Unreal%20Engine%205-white"
+                    alt="badge" />
+                <img src="https://img.shields.io/badge/Language-C%2B%2B-green"
+                    alt="badge" />
+                <img
+                    src="https://img.shields.io/badge/Category-Game%20and%20Engine%20Pipeline-red"
+                    alt="badge" />
+                <img src="https://img.shields.io/badge/Type-Solo-purple"
+                    alt="badge" />
+            </div>
+            <div class="article-container">
+                <video autoplay muted loop playsinline
+                    class="project-thumbnail-vid">
+                    <source src="../../videos/multiplayer_fps.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+            <div class="btn-container project-btn-container">
+                <button class="btn btn-color-2"
+                    onclick="window.open('mailto:davidx@usc.edu')"
+                    style="width: auto;">
+                    Contact Me For Files
+                </button>
+            </div>
+            <div class="section__text">
+                <p class="project-description-details">
+                    A fully online multiplayer created as a class project. I
+                    have implemented basic online replication using UE C++. I
+                    used Server RPCs and other methodologies to achieve a
+                    multiplayer FPS envrionment. Everything from animations,
+                    ammo pickups, firing, scoring, and even decals are
+                    implemented to be fully replicated using a mix of C++ and
+                    Blueprint Programming. The multiplayer FPS template can run
+                    on a Dedicated Server or a Listen Server.
+                    <br /><br />
+                    I utilized subsystems to account for integration to Steam,
+                    and I have fully implemented the ability to join a game
+                    through Steam using the friend system. I also used the
+                    GameInstanceSubSystem to achieve saving and loading. The
+                    decals that player can spray in the game world can be saved
+                    and loaded using this subsystem.
+                    <br /><br />
+                    This multiplayer FPS template is highly usable with numerous
+                    UI implementations as well. Players can vote to begin the
+                    game. I have also implemented a full chat system in this
+                    project that is replicated through the use of replications
+                    in PlayerStates.
+                </p>
+            </div>
+            <div class="btn-container project-btn-container">
+                <button class="btn btn-color-2"
+                    onclick="window.location.href='../../../#projects'">
+                    Back
+                </button>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="../../../#about">About</a></li>
+                        <li><a href="../../../#projects">Projects</a></li>
+                        <li><a href="../../../#skills">Skills</a></li>
+                        <li><a href="../../../#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2024 Zhehao Xu. All Rights Reserved.</p>
+        </footer>
+    </body>
+
+</html>
