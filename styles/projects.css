@@ -60,6 +60,7 @@
 .project-tldr{
     gap: 1rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .project-containers{
@@ -97,7 +98,8 @@
 }
 
 .project-tldr-description{
-    text-align: left;
+    text-align: center;
+    line-height: 25px;
 }
 
 .project-page{

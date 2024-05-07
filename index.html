@@ -199,7 +199,6 @@
 
       <div class="project-details-container">
         <div class="project-containers">
-
           <div class="further-details-container color-container">
             <!-- AGP Project -->
             <div class="article-container">
@@ -208,10 +207,13 @@
             </div>
             <h2 class="project-sub-title project-title">Oasis Blitz</h2>
             <div class="project-tldr">
-              <p class="project-tldr-description"> A unique platforming game
-                where you can drill into the terrain. I am the gameplay engineer
-                on this
-                team for my USC AGP program. </p>
+              <p class="project-tldr-description">
+                Gameplay Engineer on Oasis Blitz - A unique <i>drill-type</i>
+                platformer implemented with Unity. We used Hiearchical
+                Statemachine as the main character system. My work includes XML
+                save/load, Character and Enemy gameplay mechanics, Optimization,
+                and more. This is my capstone project at USC.
+              </p>
             </div>
             <div class="btn-container">
               <button class="btn btn-color-2 proj-expand-button"
@@ -221,6 +223,34 @@
               </button>
             </div>
           </div>
+
+          <div class="further-details-container color-container">
+            <!-- Game Engine Project -->
+            <div class="article-container">
+              <img src="./data/images/game_engine.gif" alt="Game Engine"
+                class="project-img" />
+            </div>
+            <h2 class="project-sub-title project-title">DirectX Game Engine</h2>
+            <div class="project-tldr">
+              <p class="project-tldr-description">
+                A DirectX11 game engine programmed from scratch using C++, HLSL,
+                Multi-threading for animation jobs,
+                and a custom asset pipeline. It features Skeletal Animation,
+                normal mapping, multiple render targets (support
+                post-processing), and basic 3D collision.
+              </p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 proj-expand-button"
+                id="simply_rotate_btn"
+                onclick="loadProject(this, 10)">
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-containers">
           <div class="further-details-container color-container">
             <!-- UE multiplayer Project -->
             <div class="article-container">
@@ -239,31 +269,6 @@
               <button class="btn btn-color-2 proj-expand-button"
                 id="simply_rotate_btn"
                 onclick="loadProject(this, 9)">
-                Details
-              </button>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="project-containers">
-          <div class="further-details-container color-container">
-            <!-- Simply Rotate Project -->
-            <div class="article-container">
-              <img src="./data/images/project-1.gif" alt="Simply Rotate"
-                class="project-img" />
-            </div>
-            <h2 class="project-sub-title project-title">Simply Rotate</h2>
-            <div class="project-tldr">
-              <p class="project-tldr-description"> A fun little physics-based
-                puzzle game
-                where you rotate the entire level
-                to solve problems. A game made with Unity. </p>
-            </div>
-            <div class="btn-container">
-              <button class="btn btn-color-2 proj-expand-button"
-                id="simply_rotate_btn"
-                onclick="loadProject(this, 0)">
                 Details
               </button>
             </div>
@@ -291,6 +296,29 @@
               </button>
             </div>
           </div>
+
+          <div class="further-details-container color-container">
+            <!-- Simply Rotate Project -->
+            <div class="article-container">
+              <img src="./data/images/project-1.gif" alt="Simply Rotate"
+                class="project-img" />
+            </div>
+            <h2 class="project-sub-title project-title">Simply Rotate</h2>
+            <div class="project-tldr">
+              <p class="project-tldr-description"> A fun little physics-based
+                puzzle game
+                where you rotate the entire level
+                to solve problems. A game made with Unity. </p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 proj-expand-button"
+                id="simply_rotate_btn"
+                onclick="loadProject(this, 0)">
+                Details
+              </button>
+            </div>
+          </div>
+
         </div>
 
         <div class="project-containers">

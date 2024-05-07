@@ -30,6 +30,8 @@
 }
 .btn-color-2{
     background: none;
+    min-width: 120px;
+    width: auto;
 }
 .btn-color-2:hover{
     border: rgb(53, 53, 53)0.1rem solid;
