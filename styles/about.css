@@ -31,7 +31,8 @@
     border-color: whitesmoke;
     text-align: left;
 
-    height: 30%;
+    min-height: 30%;
+    height: auto;
     overflow-y: auto;
     /* height: justify-content; */
 }
