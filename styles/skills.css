@@ -66,23 +66,23 @@
     border: whitesmoke 0.1rem solid;
 }
 .Unreal{
-    width: 70%;
+    width: 85%;
     border: whitesmoke 0.1rem solid;
 }
 .Unity{
-    width: 80%;
+    width: 85%;
     border: whitesmoke 0.1rem solid;
 }
 .UEFN{
-    width: 70%;
+    width: 80%;
     border: whitesmoke 0.1rem solid;
 }
 .Github{
-    width: 80%;
+    width: 90%;
     border: whitesmoke 0.1rem solid;
 }
 .Perforce{
-    width: 80%;
+    width: 85%;
     border: whitesmoke 0.1rem solid;
 }
 .Illustrator{
@@ -98,7 +98,11 @@
     border: whitesmoke 0.1rem solid;
 }
 .VisualStudio{
-    width: 85%;
+    width: 90%;
+    border: whitesmoke 0.1rem solid;
+}
+.Rider{
+    width: 90%;
     border: whitesmoke 0.1rem solid;
 }
 
