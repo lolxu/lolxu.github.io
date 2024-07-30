@@ -32,9 +32,9 @@
     text-align: left;
 
     min-height: 30%;
-    height: auto;
+    height: 35%;
     overflow-y: auto;
-    /* height: justify-content; */
+    
 }
 
 .about-pic{

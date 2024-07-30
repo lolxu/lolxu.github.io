@@ -1,23 +1,23 @@
 /* width */
 ::-webkit-scrollbar {
-    width: 0.6rem;
+    width: 0rem;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: #575757; 
     border-radius: 1rem;
     overflow: hidden;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #888; 
+    background: #3d3d3d; 
     border-radius: 1rem;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: #242424; 
     border-radius: 1rem;
   }
