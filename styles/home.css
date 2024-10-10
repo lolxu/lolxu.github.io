@@ -161,3 +161,32 @@ footer{
 footer p{
     text-align: center;
 }
+
+/* For floating images */
+.floatImgRight{
+    float: right;
+    width: 50%; 
+    height: auto;
+    max-width: 800px;
+    margin: 0.5rem; 
+    margin-left: 2em;
+}
+
+.floatImgLeft{
+    float: left;
+    width: 50%; 
+    max-width: 800px;
+    margin: 0.5rem; 
+    margin-right: 2em;
+}
+
+/* For lists */
+.customList
+{
+    line-height: 2rem;
+    gap: 1rem;
+    padding: 0.5rem;
+    padding-left: 3rem;
+    text-align: left;
+    color: rgb(200, 200, 200);
+}

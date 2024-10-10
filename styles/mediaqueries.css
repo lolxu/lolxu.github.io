@@ -140,4 +140,14 @@
     .text-container{
         text-align: justify;
     }
+
+    .floatImgRight{
+        float: right;
+        width: 100%;
+    }
+
+    .floatImgLeft{
+        float: left;
+        width: 100%;
+    }
 }

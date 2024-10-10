@@ -127,298 +127,153 @@
                 </button>
             </div>
             <div class="section__text">
-                <p class="project-description-details">
-                    Oasis Blitz is a unique platforming game that has drilling
-                    as the main mechanic. You can drill into the terrain, hop
-                    out, drill into enemies, and there are plenty of interesting
-                    challenges for you to overcome.
-                    <br /><br />
-                    I am a gameplay / tools engineer on the team, and i have
-                    worked on several different areas. I have implemented a
-                    <mark>save and load system using XML</mark>, a
-                    <mark>checkpoint system</mark>,
-                    <mark>gameplay animation using Animancer</mark>,
-                    <mark>automated targeting for the grapple mechanic</mark>,
-                    <mark>enemy mechanics</mark>,
-                    <mark>Optimization through object pooling</mark>, and
-                    <mark>a cinematics tool inside Unity using Cinemachine and
-                        splines</mark>.
-                    <br /><br />
-                    I also worked with <mark>hiearchical state machine</mark>
-                    for enemy and
-                    player
-                    movement mechanics. Using hiearchical statemachine helped
-                    all engineers on the team to structure their code according
-                    to a specified style, and implementing new player / enemy
-                    behaviors become a lot simpler.
-                    We are also leveraging available
-                    powerful Unity packages like FMOD, DOTween, and FEEL to
-                    facilitate the
-                    development of our game.
-                </p>
+                <div style="margin-left:5em; margin-right:5em;">
+                    <p class="project-description-details">
+                        Oasis Blitz is a unique platforming game that has
+                        drilling
+                        as the main mechanic. You can drill into the terrain,
+                        hop
+                        out, drill into enemies. As a player, you will need to
+                        master the way of the drill to overcome challenges and
+                        be
+                        the fastest fox in the desert!
+                        <br /><br />
+                    </p>
+                </div>
+                <div style="margin:5em; margin-top:0em; overflow:hidden;">
+                    <h2 style="color:whitesmoke">My Role</h2>
+                    <p class="project-description-details">
+                        I am a gameplay engineer on the team, and I have
+                        worked on several different areas including:
+                    </p>
+                    <ul class="customList">
+                        <li>Save and load system using XML</li>
+                        <li>Checkpoint system</li>
+                        <li>Gameplay animations using Animancer</li>
+                        <li>Automated targeting for the grapple
+                            mechanic</li>
+                        <li>Enemy mechanics</li>
+                        <li>Cool particles</li>
+                        <li>Optimization through object pooling</li>
+                        <li>Cinematics creation inside editor using
+                            Cinemachine
+                            and
+                            splines</li>
+                    </ul>
+                    <p class="project-description-details">
+                        Our game's main architecture is a <em>hiearchical
+                            state
+                            machine</em>
+                        for enemy and
+                        player
+                        movement mechanics. Using hiearchical statemachine
+                        helped
+                        all engineers on the team to structure their code
+                        according
+                        to a specified style, and implementing new player /
+                        enemy
+                        behaviors become a lot simpler.
+                        For additional support, we are also leveraging available
+                        powerful Unity packages like FMOD, DOTween, and
+                        Cinemachine
+                        to
+                        facilitate the
+                        development of our game.
+                    </p>
+                </div>
 
-                <div style="margin-top: 20px; text-align:left;">
-                    <h2>Code Snippets</h2>
-                    <p>Here's my code for a custom object pooler class</p>
-                    <pre style="width:auto; height:500px; overflow: scroll;">
-                    <code class="language-clike">
-public class ObjectPooler : MonoBehaviour
-{
-    [System.Serializable]
-    public class Pool
-    {
-        public String tag;
-        public GameObject prefab;
-        public int size;
-    }
+                <div style="margin:5em; overflow:hidden;">
+                    <h2 style="color:whitesmoke">Level Start Cinematics</h2>
 
-    public List<Pool> pools;
-    public Dictionary<String, List<GameObject>> poolDictionary;
-    
-#region Singleton
-    public static ObjectPooler Instance;
-    private void Awake()
-    {
-        Instance = this;
-    }
-#endregion
-    
-    private void Start()
-    {
-        poolDictionary = new Dictionary<string, List<GameObject>>();
+                    <video autoplay muted loop playsinline
+                        class="floatImgRight" style="margin-top:1rem;">
+                        <source
+                            src="../../videos/LevelCinematics.mp4"
+                            type="video/mp4">
+                    </video>
 
-        foreach (Pool pool in pools)
-        {
-            List<GameObject> objectPool = new List<GameObject>();
+                    <p class="project-description-details">
+                        Thanks to the powerful cinemachine package, I can use
+                        its
+                        functionalities to create cool cinematics rather quickly
+                        with some scripting! I designed and implemented the
+                        level
+                        start cinematics. I was inspired by how Mario Kart games
+                        did
+                        their intro cutscenes to each course. So, I designed
+                        cameras
+                        to conduct some slow pans of the level and focusing on
+                        some
+                        landmarks that each level has.
+                        <br /><br />
+                        My implementation of this system includes:
+                    </p>
+                    <ul class="customList">
+                        <li>Splines to pan the cameras</li>
+                        <li>Two cinemachine cameras to switch between them for
+                            clean cuts</li>
+                        <li>Minimal setup needed to function, just need to add
+                            correct splines</li>
+                    </ul> To make the cut between each pan sharp, I
+                    <p class="project-description-details">
+                        Once all splines are
+                        named and
+                        tagged correctly, the camera state machine will find all
+                        needed splines and look at targets to setup the
+                        cinematics automatically.
+                    </p>
 
-            for (int i = 0; i < pool.size; i++)
-            {
-                GameObject obj = Instantiate(pool.prefab, transform);
-                obj.SetActive(false);
-                objectPool.Add(obj);
-            }
-            poolDictionary.Add(pool.tag, objectPool);
-        }
-    }
+                </div>
 
-    /// <summary>
-    /// Function to allocate gameobjects from the pool
-    /// </summary>
-    /// <param name="tag"> The type of gameobject </param>
-    /// <param name="pos"> The position to spawn the object </param>
-    /// <param name="rotation"> The rotation to spawn the object </param>
-    /// <returns></returns>
-    public GameObject Allocate(String tag, Vector3 pos, Quaternion rotation)
-    {
-        if (!poolDictionary.ContainsKey(tag))
-        {
-            Debug.LogError("Pool with tag " + tag + " does not exist");
-            return null;
-        }
+                <div style="margin:5em; overflow:hidden; ">
+                    <h2 style="color:whitesmoke">Automatic Target Selection</h2>
 
-        GameObject objToSpawn = null;
+                    <video autoplay muted loop playsinline
+                        class="floatImgLeft" style="margin-top:1rem;">
+                        <source
+                            src="../../videos/ReticleTargeting.mp4"
+                            type="video/mp4">
+                    </video>
 
-        foreach (var obj in poolDictionary[tag])
-        {
-            if (!obj.activeInHierarchy)
-            {
-                objToSpawn = obj;
-                break;
-            }
-        }
+                    <p class="project-description-details">
+                        This system is built so that the grapple mechanic can be
+                        fully realized. For players to understand what they are
+                        grappling / smashing towards, a good reticle needs to
+                        indicate the selected target. Since we are a platforming
+                        game, it's best to make the target selection somewhat
+                        automatic with minimal user input required. Therefore, I
+                        designed and implemented this auto-targeting system to
+                        choose the most desirable target and render a reticle
+                        on that target.
+                        <br /><br />
+                        My implementation includes:
+                    </p>
+                    <ul class="customList">
+                        <li>A robust target selection algorithm using vector
+                            math and sphere casts</li>
+                        <li>A custom reticle design system that's friendly to
+                            artists and designers</li>
+                        <li>An accurate world to screen implementation of UI
+                            elements</li>
+                    </ul>
+                    <figure class="floatImgRight">
+                        <img style="margin:0.5rem;"
+                            src="../../images/reticle_settings.png">
+                        <figcaption
+                            style="color:rgb(200, 200, 200); font-size:10pt;">
+                            Grapple Reticle Settings
+                        </figcaption>
+                    </figure>
+                    <p class="project-description-details">
 
-        if (objToSpawn != null)
-        {
-            objToSpawn.SetActive(true);
-            // objToSpawn.transform.SetParent(null);
-            objToSpawn.transform.position = pos;
-            objToSpawn.transform.rotation = rotation;
-
-            IPooledObject pooledObj = objToSpawn.GetComponent<IPooledObject>();
-            if (pooledObj != null)
-            {
-                pooledObj.OnObjectAllocate();
-            }
-        }
-        return objToSpawn;
-    }
-
-    /// <summary>
-    /// Function to Deallocate gameobjects from the pool.
-    /// </summary>
-    /// <param name="tag"> The type of gameobject </param>
-    /// <param name="deallocateObject"> The gameobject to deallocate </param>
-    public void Deallocate(String tag, GameObject deallocateObject)
-    {
-        if (!poolDictionary.ContainsKey(tag))
-        {
-            Debug.LogError("Pool with tag " + tag + " does not exist");
-            return;
-        }
-        IPooledObject pooledObj = deallocateObject.GetComponent<IPooledObject>();
-        if (pooledObj != null)
-        {
-            pooledObj.OnObjectDeallocate();
-        }
-        deallocateObject.SetActive(false); 
-    }
-
-    /// <summary>
-    /// Deallocate all objects associated with the tag.
-    /// </summary>
-    /// <param name="tag"> The type of gameobject </param>
-    public void DeallocateAll(String tag)
-    {
-        if (!poolDictionary.ContainsKey(tag))
-        {
-            Debug.LogError("Pool with tag " + tag + " does not exist");
-            return;
-        }
-    }
-}
-                    </code>
-                    </pre>
-                    <p>Here's some code for my automated targeting system</p>
-                    <pre style="width:auto; height:500px; overflow: scroll;">
-                        <code class="language-clike">
-private void CheckForTargets()
-{
-    GameObject currentBestTarget = null;
-    
-    // Checking for overlapping colliders for auto aim
-    Collider[] results = new Collider[m_maxColliders];
-    int numCol = Physics.OverlapSphereNonAlloc(transform.position, m_autoAimRadius, results, m_aimMask);
-    
-    List<GameObject> inRangeGameObjects = new List<GameObject>();
-    for (int i = 0; i < numCol; i++)
-    {
-        inRangeGameObjects.Add(results[i].gameObject);
-    }
-
-    // Sort the list based on distance to player
-    inRangeGameObjects = inRangeGameObjects
-        .OrderBy(obj => Vector3.Distance(Camera.main.transform.position, obj.transform.position))
-        .ToList();
-    
-    // Debug.Log(inRangeGameObjects[0]);
-
-    bool foundTarget = false;
-    float bestAngle = Single.MaxValue;
-    for (int i = 0; i < inRangeGameObjects.Count; i++)
-    {
-        GameObject curObj = inRangeGameObjects[i];
-        Vector3 fromMeToObj = (curObj.transform.position - Camera.main.transform.position).normalized;
-        float angle = Mathf.Acos(Vector3.Dot(Camera.main.transform.forward, fromMeToObj)) * Mathf.Rad2Deg;
-        
-        if (angle <= m_autoAimAngle)
-        {
-            // Check if raycast is actually hitting the desired game object
-            RaycastHit hit;
-            
-            bool checkHit = Physics.Raycast(Camera.main.transform.position, fromMeToObj, out hit, m_autoAimRadius, ~m_ignoreMasks);
-            
-            if (checkHit && hit.collider.gameObject.layer == 6 && hit.collider.gameObject == curObj)
-            {
-                if (bestAngle > angle)
-                {
-                    bestAngle = angle;
-                    currentBestTarget = curObj;
-                }
-                foundTarget = true;
-            }
-        }
-    }
-
-    if (currentBestTarget != null && currentBestTarget != m_targetObject)
-    {
-        m_targetObject = currentBestTarget;
-    }
-    else if (m_targetObject == null || !foundTarget)
-    {
-        m_targetObject = null;
-    }
-
-    m_reticle.m_target = m_targetObject;
-}
-                        </code>
-                        </pre>
-                    <p>Here's how we approached the Hiearchical
-                        Statemachine</p>
-                    <pre style="width:auto; height:500px; overflow: scroll;">
-                            <code class="language-clike">
-// Inside PlayerStateFactory.cs
-// PlayerStates are enums for all the different states
-public enum PlayerStates
-{
-    Idle,
-    Walk,
-    Slide,
-    RestrictedHorizontalMovement,
-    Drill,
-    DrillAbove,
-    DrillBelow,
-    Dash,
-    FreeFall,
-    Grounded,
-    Dead,
-    Ball
-}
-
-public class PlayerStateFactory
-{
-    PlayerStateMachine context;
-    // Stored all states with dictionary for ease of access
-    public Dictionary<PlayerStates, BaseState> states = new Dictionary<PlayerStates, BaseState>();
-
-    public PlayerStateFactory(PlayerStateMachine currentContext)
-    {
-        // All states are initialized
-        context = currentContext;
-        states[PlayerStates.Idle] = new IdleState(context, this);
-        states[PlayerStates.Walk] = new WalkState(context, this);
-        states[PlayerStates.Slide] = new SlideState(context, this);
-        states[PlayerStates.RestrictedHorizontalMovement] = new RestrictedHorizontalMovementState(context, this);
-        states[PlayerStates.Drill] = new DrillState(context, this);
-        states[PlayerStates.DrillAbove] = new DrillAboveState(context, this);
-        states[PlayerStates.DrillBelow] = new DrillBelowState(context, this);
-        states[PlayerStates.Dash] = new DashState(context, this);
-        states[PlayerStates.FreeFall] = new FreeFallState(context, this);
-        states[PlayerStates.Grounded] = new GroundedState(context, this);
-        states[PlayerStates.Dead] = new DeadState(context, this);
-        states[PlayerStates.Ball] = new BallState(context, this);
-    }
-    // Other code below...
-
-// We have base states as abstract classes
-public abstract class BaseState
-{
-    public abstract void EnterState();
-    public abstract void UpdateState();
-    public abstract void ExitState();
-    public abstract void CheckSwitchStates();
-    public abstract void InitializeSubState();
-    public abstract string StateName();
-}
-
-// We can implement hiearchical states through inheritance
-// We divide states into root states and substates
-// Here's a demonstration of substate implementation
-public class DrillAboveState : BaseState
-{
-    public DrillAboveState(PlayerStateMachine currentContext, PlayerStateFactory playerStateFactory) : base(currentContext, playerStateFactory)
-    {
-        StateEnum = PlayerStates.DrillAbove;
-    }
-
-    public override void EnterState()
-    {
-        Ctx.PlayerPhysics.CurrentGravityMode = PlayerPhysics.GravityMode.DrillAbove;
-        Ctx.PlayerPhysics.CurrentDragMode = PlayerPhysics.DragMode.DrillAbove;
-        Ctx.PlayerPhysics.CurrentInputMode = PlayerPhysics.InputMode.Airborne;
-    }
-    // Other stuff like this...
-                            </code>
-                            </pre>
+                        My goal as a gameplay engineer on the team has always
+                        been implementing systems that are easily tweakable by
+                        the design team. So, all the systems that I have built
+                        will have necessary exposed values when possible. I also
+                        ensure to follow the <em>single responsibility
+                            principle</em>, making them less tightly coupled as
+                        possible.
+                    </p>
                 </div>
             </div>
             <div class="btn-container project-btn-container">
