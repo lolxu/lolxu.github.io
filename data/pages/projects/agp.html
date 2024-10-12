@@ -275,27 +275,54 @@
                         possible.
                     </p>
                 </div>
-            </div>
-            <div class="btn-container project-btn-container">
-                <button class="btn btn-color-2"
-                    onclick="window.location.href='../../../#projects'">
-                    Back
-                </button>
-            </div>
-        </section>
-        <footer>
-            <nav>
-                <div class="nav-links-container">
-                    <ul class="nav-links">
-                        <li><a href="../../../#about">About</a></li>
-                        <li><a href="../../../#projects">Projects</a></li>
-                        <li><a href="../../../#skills">Skills</a></li>
-                        <li><a href="../../../#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-            <p>Copyright &#169; 2024 Zhehao Xu. All Rights Reserved.</p>
-        </footer>
-    </body>
 
-</html>
+                <div style="margin:5em; overflow:hidden; ">
+                    <h2 style="color:whitesmoke">Object Pooler</h2>
+                    <figure class="floatImgLeft">
+                        <img style="margin:0.5rem;"
+                            src="../../images/ObjectPooler.png">
+                        <figcaption
+                            style="color:rgb(200, 200, 200); font-size:10pt;">
+                            Particle Object Pooler in Scene Hiearchy
+                        </figcaption>
+                    </figure>
+                    <p class="project-description-details">
+                        For optimization purposes, we rely pretty heavily on
+                        Object Pooling. During the prototyping phase, we
+                        were experimenting with coins and other collectible
+                        objects inside a level. However, due to our level being
+                        pretty big, we need to put a lot of coins and
+                        collectible items across the entire level. This caused
+                        scene loading and performance to be very slow.
+                        Therefore, I decided to add an <em>Object Pooler
+                            Class</em> and a
+                        <em>Pooled Object Interface</em> into
+                        our project for any game objects that needed to be
+                        pooled. Later in production, we found use of this system
+                        for our demanding particles.
+                        <br /><br />
+                    </div>
+                </div>
+                <div class="btn-container project-btn-container">
+                    <button class="btn btn-color-2"
+                        onclick="window.location.href='../../../#projects'">
+                        Back
+                    </button>
+                </div>
+            </section>
+            <footer>
+                <nav>
+                    <div class="nav-links-container">
+                        <ul class="nav-links">
+                            <li><a href="../../../#about">About</a></li>
+                            <li><a href="../../../#projects">Projects</a></li>
+                            <li><a href="../../../#skills">Skills</a></li>
+                            <li><a href="../../../#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <p>Copyright &#169; 2024 Zhehao Xu. All Rights Reserved.</p>
+            </footer>
+        </body>
+
+    </html>
