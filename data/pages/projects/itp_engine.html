@@ -119,42 +119,84 @@
                 </button>
             </div>
             <div class="section__text">
-                <p class="project-description-details">
-                    This is a DirectX11 Game Engine developed from my ITP485 -
-                    Game Engine Programming class.
-                    <br /><br />
-                    Implementing this game engine allowed me to learn <mark>the
+                <div style="margin-left:5em; margin-right:5em;">
+                    <p class="project-description-details">
+                        This is a DirectX11 Game Engine that received continued
+                        development from my ITP485 - Game Engine Programming
+                        class.
+                        <br /><br />
+                        Implementing this game engine allowed me to learn the
                         basics
-                        of using DirectX buffers, how rendering works in
-                        general,
-                        and how basic functionalities like lighting, animations,
+                        of rendering in the context of a graphics library
+                        (D3D11), and how basic functionalities like lighting,
+                        animations,
                         and
                         physics collisions can be implemented in a real game
-                        engine</mark>.
-                    <br /><br />
-                    I used HLSL to create different shaders such as <mark> the
-                        Phong
-                        Lighting shader, Skinning shader for skeletal
-                        animations, a
-                        Toon shader for the character, a Normal map shader,
-                        a Gaussian blur shader for
-                        implementing bloom with multiple Render Targets, and
-                        more
-                        basic vertex and pixel shaders
-                        for unlit rendering</mark>.
-                    <br /><br />
-                    I also implemented an <mark>asset import pipeline that reads
-                        information from JSON</mark> with a specific format to
-                    import
-                    vertices from meshes, animation data, materials with
-                    textures, and level data. I further improved this asset
-                    pipeline to support a Actor-Component based structure.
-                    For
-                    example, an actor can have a lighting components, and
-                    this
-                    importer will import and create components according to
-                    JSON.
-                </p>
+                        engine.
+                        <br /><br />
+                        Here are some features that I have implemented so far:
+                    </p>
+                    <ul class="customList">
+                        <li>Rendering with ID3D11 buffers (Vertex Buffer, Index
+                            Buffer, etc...) </li>
+                        <li>Skeletal Animations with Animation Blending</li>
+                        <li>JSON format asset import (including Mesh, Animation,
+                            Level, etc...)</li>
+                        <li>Multiple Render Targets for Bloom post-processing
+                            effect</li>
+                        <li>HLSL shader support (thanks to the D3D11
+                            library)</li>
+                        <li>Collision Detection such as Raycast vs AABB and AABB
+                            vs
+                            AABB</li>
+                    </ul>
+                </div>
+
+                <div style="margin:5em; overflow:hidden;">
+                    <h2 style="color:whitesmoke">Notes on Rendering</h2>
+
+                    <figure class="floatImgRight">
+                        <video autoplay muted loop playsinline
+                            style="margin-top:0.5rem; width:100%">
+                            <source
+                                src="../../videos/Cube.mp4"
+                                type="video/mp4">
+                        </video>
+                        <figcaption
+                            style="color:rgb(200, 200, 200); font-size:10pt;">
+                            Testing
+                            with Textured Cube and Depth
+                            buffer
+                        </figcaption>
+                    </figure>
+
+                    <p class="project-description-details">
+                        The most important thing I have learned from my course
+                        and the development of this engine is how
+                        <b><em>rendering is
+                                achieved in modern game engines</em></b>. We are
+                        using different
+                        buffers to store important information like vertices,
+                        lighting, z-depth, etc... and sending those buffers to
+                        the GPU for it to render. Thanks to the powerful D3D11
+                        rendering pipeline, a lot of the foundational features
+                        like rasterization and GPU communications are taken care
+                        of. We only need to send over the correct buffers.
+                        <br /><br />
+                        Another crucial thing I have learned is about
+                        <b><em>shader
+                                supports</em></b>.
+                        Shaders are really powerful things! For this engine, a
+                        lot of the rendering features are made through HLSL
+                        shaders. I made a Phong Lighting HLSL shader that
+                        implements the Phong lighting model, Mesh shader that
+                        puts the mesh in world space, and even a Skinned shader
+                        that can skin a character model with the provided
+                        skeleton data. All shaders are made up of a Vertex
+                        Shader (for modifying vertices) and a Pixel Shader (for
+                        modifying color and per pixel data).
+                    </p>
+                </div>
             </div>
             <div class="btn-container project-btn-container">
                 <button class="btn btn-color-2"
