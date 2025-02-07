@@ -12,7 +12,8 @@ const ProjectNames =
     "agp",
     "getaway",
     "multiplayer_fps",
-    "itp_engine"
+    "itp_engine",
+    "prime_engine"
 ]
 
 let ProjectText = [];

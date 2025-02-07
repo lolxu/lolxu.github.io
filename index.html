@@ -248,26 +248,27 @@
           </div>
 
           <div class="further-details-container color-container">
-            <!-- UI Project -->
+            <!-- Advanced Game Engine Project -->
             <div class="article-container">
-              <img src="./data/images/blindsight.png" alt="Blindsight UI"
+              <img src="./data/images/Engine.gif" alt="prime_engine"
                 class="project-img" />
             </div>
-            <h2 class="project-sub-title project-title">UI/UX Design
-              Blindsight</h2>
+            <h2 class="project-sub-title project-title">PrimeEngine
+              Development</h2>
             <div class="project-tldr">
               <p class="project-tldr-description">
-                Designed a UI Kit for the AGP project Blindsight: War of the
-                Wardens. Used Adobe Suite with Illustrator and Figma to design
-                UX flow and UI icons for the game. The game is released on
-                Steam.
+                A series of personal projects done on a lightweight C++ engine
+                with a Maya asset pipeline workflow
+                provided by Professor Artem Kovalovs. These projects include
+                view frustum culling, gameplay programming, and physics
+                programming.
               </p>
             </div>
             <div class="btn-container">
               <button class="btn btn-color-2 proj-expand-button"
-                id="blindsight"
-                onclick="window.open('./data/files/DavidXu_Blindsight_UIKit_Final.pdf')">
-                Download UI Kit
+                id="oasis_blitz"
+                onclick="loadProject(this, 11)">
+                Details
               </button>
             </div>
           </div>
@@ -300,6 +301,31 @@
             </div>
           </div>
 
+          <div class="further-details-container color-container">
+            <!-- UI Project -->
+            <div class="article-container">
+              <img src="./data/images/blindsight.png" alt="Blindsight UI"
+                class="project-img" />
+            </div>
+            <h2 class="project-sub-title project-title">UI/UX Design
+              Blindsight</h2>
+            <div class="project-tldr">
+              <p class="project-tldr-description">
+                Designed a UI Kit for the AGP project Blindsight: War of the
+                Wardens. Used Adobe Suite with Illustrator and Figma to design
+                UX flow and UI icons for the game. The game is released on
+                Steam.
+              </p>
+            </div>
+            <div class="btn-container">
+              <button class="btn btn-color-2 proj-expand-button"
+                id="blindsight"
+                onclick="window.open('./data/files/DavidXu_Blindsight_UIKit_Final.pdf')">
+                Download UI Kit
+              </button>
+            </div>
+          </div>
+
           <!-- Simply Rotate Project -->
           <div class="further-details-container color-container">
             <div class="article-container">
@@ -324,6 +350,10 @@
             </div>
           </div>
 
+        </div>
+
+        <div class="project-containers">
+
           <!-- An Average Day -->
           <div class="further-details-container color-container">
             <div class="article-container">
@@ -346,10 +376,6 @@
               </button>
             </div>
           </div>
-
-        </div>
-
-        <div class="project-containers">
 
           <!-- Getaway Mobile Game -->
           <div class="further-details-container color-container">
@@ -374,52 +400,54 @@
             </div>
           </div>
 
-          <!-- Untitled Platforming Project -->
-          <div class="further-details-container color-container">
-            <div class="article-container">
-              <img src="./data/images/gmtk-thumbnail.gif"
-                alt="project-thumbnail" class="project-img" />
-            </div>
-            <h2 class="project-sub-title project-title">Untitled Platforming
-              Game</h2>
-            <div class="project-tldr">
-              <p class="project-tldr-description"> Submission to GMTK 2023
-                Game
-                Jam: Roles Reversed. It offers an
-                interesting reverse on platforming. </p>
-            </div>
-            <div class="btn-container">
-              <button class="btn btn-color-2 proj-expand-button"
-                id="gmtk_2023"
-                onclick="loadProject(this, 1)">
-                Details
-              </button>
-            </div>
-          </div>
+        </div>
+      </div>
 
-          <!-- Game Prototypes -->
-          <div class="further-details-container color-container">
-            <div class="article-container">
-              <img src="./data/images/prototype-thumbnail.gif"
-                alt="project-thumbnail" class="project-img" />
-            </div>
-            <h2 class="project-sub-title project-title">Game Prototypes</h2>
-            <div class="project-tldr">
-              <p class="project-tldr-description"> Several game prototypes
-                made
-                with different constraints and
-                limited scopes. These prototypes are made with Unity and C#.
-              </p>
-            </div>
-            <div class="btn-container">
-              <button class="btn btn-color-2 proj-expand-button"
-                id="csci426_projects"
-                onclick="loadProject(this, 3)">
-                Details
-              </button>
-            </div>
+      <div class="project-containers">
+        <!-- Untitled Platforming Project -->
+        <div class="further-details-container color-container">
+          <div class="article-container">
+            <img src="./data/images/gmtk-thumbnail.gif"
+              alt="project-thumbnail" class="project-img" />
           </div>
+          <h2 class="project-sub-title project-title">Untitled Platforming
+            Game</h2>
+          <div class="project-tldr">
+            <p class="project-tldr-description"> Submission to GMTK 2023
+              Game
+              Jam: Roles Reversed. It offers an
+              interesting reverse on platforming. </p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 proj-expand-button"
+              id="gmtk_2023"
+              onclick="loadProject(this, 1)">
+              Details
+            </button>
+          </div>
+        </div>
 
+        <!-- Game Prototypes -->
+        <div class="further-details-container color-container">
+          <div class="article-container">
+            <img src="./data/images/prototype-thumbnail.gif"
+              alt="project-thumbnail" class="project-img" />
+          </div>
+          <h2 class="project-sub-title project-title">Game Prototypes</h2>
+          <div class="project-tldr">
+            <p class="project-tldr-description"> Several game prototypes
+              made
+              with different constraints and
+              limited scopes. These prototypes are made with Unity and C#.
+            </p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2 proj-expand-button"
+              id="csci426_projects"
+              onclick="loadProject(this, 3)">
+              Details
+            </button>
+          </div>
         </div>
       </div>
 
